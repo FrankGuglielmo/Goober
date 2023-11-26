@@ -13,6 +13,8 @@
 		7B64BD5B2B133B7200AFCF2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5A2B133B7200AFCF2C /* HomeView.swift */; };
 		7B64BD5D2B133C6F00AFCF2C /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */; };
 		7B64BD5F2B133DCE00AFCF2C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5E2B133DCE00AFCF2C /* LocationManager.swift */; };
+		7B64BD652B134A5600AFCF2C /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD642B134A5600AFCF2C /* LocationSearchActivationView.swift */; };
+		7B64BD672B134C2800AFCF2C /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD662B134C2800AFCF2C /* MapViewActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		7B64BD5A2B133B7200AFCF2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 		7B64BD5E2B133DCE00AFCF2C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7B64BD642B134A5600AFCF2C /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
+		7B64BD662B134C2800AFCF2C /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,8 @@
 		7B64BD542B133A2B00AFCF2C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				7B64BD572B133A8E00AFCF2C /* Views */,
-				7B64BD562B133A7A00AFCF2C /* ViewModels */,
+				7B64BD612B134A0900AFCF2C /* LocationSearch */,
+				7B64BD602B1349D700AFCF2C /* Home */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -113,11 +117,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		7B64BD562B133A7A00AFCF2C /* ViewModels */ = {
+		7B64BD562B133A7A00AFCF2C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7B64BD572B133A8E00AFCF2C /* Views */ = {
@@ -125,8 +129,42 @@
 			children = (
 				7B64BD5A2B133B7200AFCF2C /* HomeView.swift */,
 				7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */,
+				7B64BD662B134C2800AFCF2C /* MapViewActionButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7B64BD602B1349D700AFCF2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD572B133A8E00AFCF2C /* Views */,
+				7B64BD562B133A7A00AFCF2C /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B64BD612B134A0900AFCF2C /* LocationSearch */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD632B134A3A00AFCF2C /* ViewModel */,
+				7B64BD622B134A3300AFCF2C /* Views */,
+			);
+			path = LocationSearch;
+			sourceTree = "<group>";
+		};
+		7B64BD622B134A3300AFCF2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD642B134A5600AFCF2C /* LocationSearchActivationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B64BD632B134A3A00AFCF2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B64BD5F2B133DCE00AFCF2C /* LocationManager.swift in Sources */,
+				7B64BD672B134C2800AFCF2C /* MapViewActionButton.swift in Sources */,
 				7B64BD412B1339E500AFCF2C /* GooberApp.swift in Sources */,
 				7B64BD5D2B133C6F00AFCF2C /* UberMapViewRepresentable.swift in Sources */,
 				7B64BD5B2B133B7200AFCF2C /* HomeView.swift in Sources */,
+				7B64BD652B134A5600AFCF2C /* LocationSearchActivationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
