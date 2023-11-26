@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		7B64BD412B1339E500AFCF2C /* GooberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD402B1339E500AFCF2C /* GooberApp.swift */; };
-		7B64BD432B1339E500AFCF2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD422B1339E500AFCF2C /* ContentView.swift */; };
 		7B64BD452B1339E600AFCF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B64BD442B1339E600AFCF2C /* Assets.xcassets */; };
 		7B64BD482B1339E600AFCF2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B64BD472B1339E600AFCF2C /* Preview Assets.xcassets */; };
+		7B64BD5B2B133B7200AFCF2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5A2B133B7200AFCF2C /* HomeView.swift */; };
+		7B64BD5D2B133C6F00AFCF2C /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */; };
+		7B64BD5F2B133DCE00AFCF2C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64BD5E2B133DCE00AFCF2C /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B64BD3D2B1339E500AFCF2C /* Goober.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goober.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B64BD402B1339E500AFCF2C /* GooberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooberApp.swift; sourceTree = "<group>"; };
-		7B64BD422B1339E500AFCF2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B64BD442B1339E600AFCF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B64BD472B1339E600AFCF2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B64BD5A2B133B7200AFCF2C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		7B64BD5E2B133DCE00AFCF2C /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		7B64BD3F2B1339E500AFCF2C /* Goober */ = {
 			isa = PBXGroup;
 			children = (
-				7B64BD402B1339E500AFCF2C /* GooberApp.swift */,
-				7B64BD422B1339E500AFCF2C /* ContentView.swift */,
+				7B64BD4E2B1339F900AFCF2C /* App */,
+				7B64BD542B133A2B00AFCF2C /* Core */,
+				7B64BD522B133A2600AFCF2C /* Extensions */,
+				7B64BD532B133A2900AFCF2C /* Managers */,
+				7B64BD552B133A2D00AFCF2C /* Models */,
 				7B64BD442B1339E600AFCF2C /* Assets.xcassets */,
 				7B64BD462B1339E600AFCF2C /* Preview Content */,
 			);
@@ -65,6 +72,61 @@
 				7B64BD472B1339E600AFCF2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B64BD4E2B1339F900AFCF2C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD402B1339E500AFCF2C /* GooberApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7B64BD522B133A2600AFCF2C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B64BD532B133A2900AFCF2C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD5E2B133DCE00AFCF2C /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7B64BD542B133A2B00AFCF2C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD572B133A8E00AFCF2C /* Views */,
+				7B64BD562B133A7A00AFCF2C /* ViewModels */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7B64BD552B133A2D00AFCF2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B64BD562B133A7A00AFCF2C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B64BD572B133A8E00AFCF2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B64BD5A2B133B7200AFCF2C /* HomeView.swift */,
+				7B64BD5C2B133C6F00AFCF2C /* UberMapViewRepresentable.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B64BD432B1339E500AFCF2C /* ContentView.swift in Sources */,
+				7B64BD5F2B133DCE00AFCF2C /* LocationManager.swift in Sources */,
 				7B64BD412B1339E500AFCF2C /* GooberApp.swift in Sources */,
+				7B64BD5D2B133C6F00AFCF2C /* UberMapViewRepresentable.swift in Sources */,
+				7B64BD5B2B133B7200AFCF2C /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +339,7 @@
 				DEVELOPMENT_TEAM = 574355JH3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow this app to use your location for finding nearby drivers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +369,7 @@
 				DEVELOPMENT_TEAM = 574355JH3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow this app to use your location for finding nearby drivers";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
